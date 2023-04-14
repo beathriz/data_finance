@@ -32,7 +32,6 @@ bucket_name = 'datafinance'
 # Nome do arquivo JSON que você deseja salvar no bucket
 json_file_name = 'ibm_5min.json'
 
-aws configure
 
 # Salva o arquivo JSON no bucket
 s3.Object(bucket_name, json_file_name).put(Body=(bytes(json.dumps(data).encode('UTF-8'))))
