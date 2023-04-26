@@ -3,7 +3,7 @@ import boto3
 import json
 
 # Chave de API da Alpha Vantage
-api_key = '2ULLERBG34DUQAKS'
+api_key = 'secret_key'
 
 # URL da API Alpha Vantage para solicitar os dados do IBM com intervalo de 5min
 url = f'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey={api_key}'
